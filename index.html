@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- required meta tags -->
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
 
-     <!-- Bootstrap CSS. this is a link to an open source html code and css/js style guide located on the web. -->
+     <!-- Bootstrap css/js style guide. -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Weather Data Share</title>
@@ -13,8 +13,8 @@
 <body>
   <div class="container">
     <!-- Navbar code  -->      
-    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
-        <a class="navbar-brand text-white" href="index.html">Weather Data Share</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
+        <a class="navbar-brand text-white" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,12 +26,12 @@
                 Plots
             </a>
             <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item bg-info text-white" href="temperature.html">Temperature</a>
-                <a class="dropdown-item bg-info text-white" href="humidity.html">Humidity</a>
-                <a class="dropdown-item bg-info text-white" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item bg-info text-white" href="windspeed.html">Wind Speed</a>
+                <a class="dropdown-item bg-dark text-white" href="temperature.html">Temperature</a>
+                <a class="dropdown-item bg-dark text-white" href="humidity.html">Humidity</a>
+                <a class="dropdown-item bg-dark text-white" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item bg-dark text-white" href="windspeed.html">Wind Speed</a>
             </div>
-            <!-- Link to other pages -->
+            <!-- Links to other pages -->
             </li>
             <li class="nav-item text-white">
                 <a class="nav-link text-white" href="comparison.html">Comparison</a>
@@ -57,7 +57,7 @@
         <!-- Setting style of the paragraph and the photo area -->
         <p class="p-3 mb-2 bg-light text-dark">
           <!-- Pull image to the left of this paragraph element so that the text wraps -->
-          <img src="Resources\assets\images\City Latitude vs Max Temperature.png" class="pull-left  float-left" alt="weather to latitude comparison">
+          <img src="Resources\assets\images\City Latitude vs Max Temperature.png" class="pull-left  float-left">
           <p class="p-3 mb-2 bg-light text-dark">
             A Python script was used to visualize the weather of 500+ randomly selected cities across the world of varying distance from the equator. A series of scatter plots were then created to showcase the following relationships: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude. This website provides the source data and visualizations that were created as part of the project.
           </p>
