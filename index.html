@@ -1,44 +1,106 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bryce Bio</title>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
+
+     <!-- Bootstrap CSS. this is a link to an open source html code and css/js style guide located on the web. -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Weather Data Share</title>
 </head>
-
 <body>
-  <!-- Header -->
-  <h1>Bryce Wilkinson</h1>
+  <div class="container">
+    <!-- Navbar code  -->      
+    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <a class="navbar-brand text-white" href="index.html">Weather Data Share</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Image -->
-  <img src="https://avatars.githubusercontent.com/u/75138118?s=460&u=57a46892aca718ec9691e773a798e2376fe3cfcc&v=4" alt="Bryce Headshot" />
-  <br>
+        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-white">
+            <!-- Drop down menu -->
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item bg-info text-white" href="temperature.html">Temperature</a>
+                <a class="dropdown-item bg-info text-white" href="humidity.html">Humidity</a>
+                <a class="dropdown-item bg-info text-white" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item bg-info text-white" href="windspeed.html">Wind Speed</a>
+            </div>
+            <!-- Link to other pages -->
+            </li>
+            <li class="nav-item text-white">
+                <a class="nav-link text-white" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item text-white">
+                <a class="nav-link text-white" href="weather_data_html.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+  <!-- Main content of page with a grid size of 8 out of 12 columns -->
+  <div class="container">
+    <div class="row ">
+      <!-- Setting the width and color schemes -->
+      <div class="col-sm-8 bg-light text-dark">
+        <!-- Defining color and size of text -->
+        <h1 class="page-title text-info">
+          Summary: Latitude vs X
+        </h1>
+        <!-- Creating a actual horizontal line -->
+        <hr size=2>
+        <!-- Setting style of the paragraph and the photo area -->
+        <p class="p-3 mb-2 bg-light text-dark">
+          <!-- Pull image to the left of this paragraph element so that the text wraps -->
+          <img src="Resources\assets\images\City Latitude vs Max Temperature.png" class="pull-left  float-left" alt="weather to latitude comparison">
+          <p class="p-3 mb-2 bg-light text-dark">
+            A Python script was used to visualize the weather of 500+ randomly selected cities across the world of varying distance from the equator. A series of scatter plots were then created to showcase the following relationships: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude. This website provides the source data and visualizations that were created as part of the project.
+          </p>
+      </div>
 
-  <p>All conditioned things are.... </p>
-  <br>
+      <!-- Side bar div style to take up 4 columns and formatting -->
+      <div class="col-sm-4 bg-light text-dark">
+       <!-- sub title -->
+       <h3 id='sidebar-title' class="text-info">
+         Visualizations
+        </h3>         
+       <div>
+         <!-- line break -->
+        <hr/>
+       </div>
+       <!-- Created a new row with two columns of photos and 2 rows that will stack as screen does -->
+       <div class='row'>
+         <div class='row'>
+           <!-- used col-md-6 for the div or the 2 photos  -->
+          <a class = 'col-md-6 img-hover' href = 'temperature.html'>
+                  <img src='Resources\assets\images\City Latitude vs Max Temperature.png' width=100% alt = 'Latitude vs. Temperature'>
+          </a>
+          <a class = 'col-md-6' href = 'humidity.html'>
+                  <img src='Resources\assets\images\City Latitude vs Humidity.png' width=100%>
+          </a>
+        </div>
+         <!-- used col-md-6 for the div or the 2 photos  -->
+        <div class='row'>
+          <a class = 'col-md-6' href = 'cloudiness.html'>
+                  <img src='Resources\assets\images\City Latitude vs Cloudiness.png' width=100%>
+          </a>
+          <a class = 'col-md-6' href = 'windspeed.html'>
+                  <img src='Resources\assets\images\City Latitude vs Wind Speed.png' width=100%>
+          </a>
+        </div>
+       </div>
+      </div>
+    </div>
 
-  <table border="1">
-    <thead>
-      <tr>
-        <th colspan="4">Things I'm Interested In</th>
-      </tr>
-      <tr>
-        <th>Books</th>
-        <th>Japanese Swords</th>
-        <th>Theravada Buddhism</th>
-        <th>Cooking</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>whatever</td>
-        <td>whatever</td>
-        <td>whatever</td>
-        <td>whatever</td>
-      </tr>
-    </tbody>
-  </table>
-<br>
-
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
